@@ -17,7 +17,7 @@ module Watir
           begin
             frameObj = self.frame(:index, m+1)
           rescue => e
-            puts "bb #{e}"
+            log "occur exception: #{e.class},#{e.message}"
             break
           end
           if frameObj.contains_text(target)
@@ -27,6 +27,9 @@ module Watir
         end
       end
       return flag
+    rescue WIN32OLERuntimeError
+      log "Cross-domain access error occured!"
+      return false
     end
   end
 end

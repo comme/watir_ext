@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="GemRequirementsHolder" version="3">
+    <requirement>
+      <requirement>
+        <dependency name="popup" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="watir" version="1.6.5" bound="EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.21, D:/Ruby192/lib/ruby/gems/1.9.1/gems/bundler-1.0.21)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] watir (v1.6.5, D:/Ruby192/lib/ruby/gems/1.9.1/gems/watir-1.6.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] hoe (v2.12.4, D:/Ruby192/lib/ruby/gems/1.9.1/gems/hoe-2.12.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] commonwatir (v1.6.5, D:/Ruby192/lib/ruby/gems/1.9.1/gems/commonwatir-1.6.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] win32-process (v0.6.5, D:/Ruby192/lib/ruby/gems/1.9.1/gems/win32-process-0.6.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] firewatir (v1.6.5, D:/Ruby192/lib/ruby/gems/1.9.1/gems/firewatir-1.6.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] win32-api (v1.4.8, D:/Ruby192/lib/ruby/gems/1.9.1/gems/win32-api-1.4.8-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] user-choices (v1.1.6.1, D:/Ruby192/lib/ruby/gems/1.9.1/gems/user-choices-1.1.6.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] multi_json (v1.0.4, D:/Ruby192/lib/ruby/gems/1.9.1/gems/multi_json-1.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] windows-api (v0.4.0, D:/Ruby192/lib/ruby/gems/1.9.1/gems/windows-api-0.4.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v3.0.0, D:/Ruby192/lib/ruby/gems/1.9.1/gems/builder-3.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] s4t-utils (v1.0.4, D:/Ruby192/lib/ruby/gems/1.9.1/gems/s4t-utils-1.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] windows-pr (v1.2.1, D:/Ruby192/lib/ruby/gems/1.9.1/gems/windows-pr-1.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] xml-simple (v1.1.1, D:/Ruby192/lib/ruby/gems/1.9.1/gems/xml-simple-1.1.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.5.0, D:/Ruby192/lib/ruby/gems/1.9.1/gems/nokogiri-1.5.0-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.1.3, D:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3)" level="application" />
+  </component>
+</module>
+
