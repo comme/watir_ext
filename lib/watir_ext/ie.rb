@@ -45,16 +45,16 @@ module Watir
       end
     end
 
-    def create_browser_window
-      begin
-        @ie = WIN32OLE.new('InternetExplorer.Application')
-      rescue Exception => e
-        puts e.class
-        puts e.message
-        puts e.backtrace.join("\n")
-        raise
-      end
-    end
+#    def create_browser_window
+#      begin
+#        @ie = WIN32OLE.new('InternetExplorer.Application')
+#      rescue Exception => e
+#        puts e.class
+#        puts e.message
+#        puts e.backtrace.join("\n")
+#        raise
+#      end
+#    end
 
     private :create_browser_window
 

@@ -1,6 +1,7 @@
 #coding:utf-8
-
+gem 'watir','1.6.5'
 require 'watir'
+require 'popup'
 require 'watir/ie'
 require "watir_ext/version"
 require "watir_ext/ie"

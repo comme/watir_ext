@@ -1,0 +1,14 @@
+对watir 1.6.5版本做出如下改动:
+  模块                 方法名                          描述      备注
+ Watir::IE	          ie_version	                 实例方法	获取ie版本	有时需要根据ie的版本号来决定做何种操作
+		              attach_new	                 类方法	    返回最新打开的一个IE浏览器的ie对象	不需要知道新弹出窗口的名称而直接获取新窗口的ie对象
+		              record	                     类方法	    记录当前所有的ie窗口句柄	attach_new函数需要结合此函数来使用，从而确定谁是新打开的浏览器
+		              each	                         类方法	    重写方法	watir原有的each函数存在bug[部分系统的ie path会是纯小写]
+                      wait	                         实例方法	重写方法	合入wait时长限制,避免长时间无法加载时程序执行被挂起  默认不会复写原有的wait方法，若要使用请require 'watir_ext/ie_wait.rb'
+		              contains_text	                 实例方法	覆写Watir::PageContainer方法	Watir::PageContainer的未处理页面嵌有frame的情况
+		              process_id	                 实例方法	获取IE对象对应的浏览器的pid	查watir库说存在此函数，实际不存在
+ Watir::Frame	      contains_text	                 实例方法	覆写Watir::PageContainer方法	Watir::PageContainer的未处理页面嵌有frame的情况
+ Watir::PageContainer eval_in_spawned_process	     实例方法	重写方法	[修正click_no_wait bug]
+ Watir::Element	      assert_exists	                 实例方法	重写方法	网速较慢时,可能ie的状态已经是加载完毕，但是需要的页面元素其实还未成功加载在页面上,重写为每个元素添加一个15秒的缓冲时长 默认不会复写原有的assert_exists方法，若要使用请require 'watir_ext/element.rb'
+ Watir::TextField	  characters_in	                 实例方法	重写方法	watir原有的函数在此处不能自适应WIN32OLE.codepage为UTF-8或者GBK的情况
+ Watir::FileField	  set	                         实例方法	重写方法	重写watir FileField类自带的set函数，使其能够根据传入自定义文件上载框标题进行上传文件设置

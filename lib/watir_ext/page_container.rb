@@ -1,3 +1,4 @@
+#coding:utf-8
 # 修正click_no_wait bug
 require 'watir/page-container'
 module Watir

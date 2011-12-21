@@ -1,3 +1,4 @@
+#coding:utf-8
 module Watir
   class TextField
     def characters_in(value, &blk)
