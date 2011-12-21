@@ -2,7 +2,7 @@
 require File.join(__FILE__, '..', '..', 'spec_helper')
 describe Watir::Frame do
   before :each do
-    @ie = Watir::IE.start(html_page_path("frame_multi.html"))
+    @ie = Watir::IE.start(WatirExtHelper.html_page_path("frame_multi.html"))
   end
   after :each do
     @ie.close

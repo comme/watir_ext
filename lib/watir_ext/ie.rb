@@ -45,6 +45,19 @@ module Watir
       end
     end
 
+    def create_browser_window
+      begin
+        @ie = WIN32OLE.new('InternetExplorer.Application')
+      rescue Exception => e
+        puts e.class
+        puts e.message
+        puts e.backtrace.join("\n")
+        raise
+      end
+    end
+
+    private :create_browser_window
+
     def ie_version
       n = self.document.invoke('parentWindow').navigator.appVersion
       m =/MSIE\s(.*?);/.match(n)
@@ -61,29 +74,33 @@ module Watir
       end
     end
 
-    def terminate
-#      `taskkill /F /T /PID #{process_id}`
-#      begin
-#        refresh
-#      rescue WIN32OLERuntimeError
-#        puts("terminate ie success")
-#        log("terminate ie success")
-#      else
-#        return false
+#    def terminate
+#      wmi = WIN32OLE.connect("winmgmts://")
+#      ps  = wmi.ExecQuery("select * from win32_process")
+#      ps.each do |p|
+#        if p.name =~ /iexplore\.exe/i and p.handle.to_i == process_id.to_i and p.terminate == 0
+#          @closing = true
+#          while Win32API.new("user32", "IsWindow", 'L', 'L').Call(self.hwnd.to_i) == 1
+#            sleep 0.3
+#          end
+#          return true
+#        end
 #      end
-      wmi = WIN32OLE.connect("winmgmts://")
-      ps  = wmi.ExecQuery("select * from win32_process")
-      ps.each do |p|
-        if p.name =~ /iexplore\.exe/i and p.handle.to_i == process_id.to_i and p.terminate == 0
-          @closing = true
-          return true
-        end
-      end
-      return false
-    rescue Exception => e
-      log e
-      raise
-    end
+#      return false
+#    rescue Exception => e
+#      log e
+#      raise
+#      return unless exists?
+#      @closing = true
+#      @ie.stop
+#      puts @ie.readyState
+#      chwnd = @ie.hwnd.to_i
+#      @ie.quit
+#      puts "-----------------"
+#      while Win32API.new("user32","IsWindow", 'L', 'L').Call(chwnd) == 1
+#        sleep 0.3
+#      end
+#    end
 
     def contains_text(target)
       log(" my contains_text ")

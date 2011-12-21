@@ -13,12 +13,36 @@ describe Watir::IE do
       @ie.ie_version.should eq("8.0")
     end
   end
-
-
+#  context "#terminate" do
+#    it "should be quit success" do
+#      ie = Watir::IE.new
+#      ie.terminate.should be_true
+#    end
+#    it "should be quit success with timeout : one" do
+#      ie = Watir::IE.new
+#      begin
+#        Timeout.timeout(10) do
+#          ie.goto("#{WatirExtHelper.url_path}/hello?timeout=15")
+#        end
+#      rescue TimeoutError
+#        ie.terminate.should be_true
+#      end
+#    end
+#    it "should be quit success with timeout : two" do
+#      ie = Watir::IE.new
+#      begin
+#        Timeout.timeout(10) do
+#          ie.goto("#{WatirExtHelper.url_path}/hello?timeout=15")
+#          ie.contains_text("parameters").should be_false
+#        end
+#      rescue TimeoutError
+#        ie.terminate
+#      end
+#    end
+#  end
   context "#contains_text" do
     before :each do
-#    @ie = Watir::IE.start("http://localhost/nestedFrames.html")
-      @ie = Watir::IE.start(html_page_path("nestedFrames.html"))
+      @ie = Watir::IE.start(WatirExtHelper.html_page_path("nestedFrames.html"))
     end
     after :each do
       @ie.close
@@ -58,22 +82,21 @@ describe Watir::IE do
       @ie.contains_text("百度").should be_false
     end
   end
-
   context "#wait" do
     require 'watir_ext/ie_wait.rb'
     before :each do
       @ie = Watir::IE.new
     end
     after :each do
-      @ie.terminate
-    end
-    it "should redirect to blank page if server response geater than 30 seconds" do
-      @ie.goto("http://localhost/hello?timeout=60")
-      @ie.contains_text("parameters").should be_false
+      @ie.close
     end
     it "should contains text frames when timeout equal 0" do
-      @ie.goto("http://localhost/hello?timeout=0")
+      @ie.goto("#{WatirExtHelper.url_path}/hello?")
       @ie.contains_text("parameters").should be_true
+    end
+    it "should redirect to blank page if server response geater than 30 seconds" do
+      @ie.goto("#{WatirExtHelper.url_path}/hello?timeout=60")
+      @ie.contains_text("parameters").should be_false
     end
   end
   context ".attach_new" do
@@ -88,38 +111,10 @@ describe Watir::IE do
     end
     it "should attach success" do
       Watir::IE.record
-      Watir::IE.start(html_page_path("nestedFrames.html"))
+      Watir::IE.start(WatirExtHelper.html_page_path("nestedFrames.html"))
       ie=Watir::IE.attach_new
       ie.contains_text("frame").should be_true
       ie.close
     end
   end
-  context "#terminate" do
-    it "should be quit success" do
-      ie = Watir::IE.new
-      ie.terminate.should be_true
-    end
-    it "should be quit success with timeout : one(you should start http server at localhost:80)" do
-      ie = Watir::IE.new
-      begin
-        Timeout.timeout(10) do
-          ie.goto("http://localhost:80/hello?timeout=15")
-        end
-      rescue TimeoutError
-        ie.terminate.should be_true
-      end
-    end
-    it "should be quit success with timeout : two(you should start http server at localhost:80)" do
-      ie = Watir::IE.new
-      begin
-        Timeout.timeout(10) do
-          ie.goto("http://localhost:80/hello?timeout=15")
-          ie.contains_text("parameters").should be_false
-        end
-      rescue TimeoutError
-        ie.terminate
-      end
-    end
-  end
-
 end

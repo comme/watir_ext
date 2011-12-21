@@ -2,7 +2,7 @@
 require File.join(__FILE__, '..', '..', 'spec_helper')
 describe Watir::TextField do
   before :each do
-    @ie         = Watir::IE.start(html_page_path("textfields1.html"))
+    @ie         = Watir::IE.start(WatirExtHelper.html_page_path("textfields1.html"))
     @text_field = @ie.text_field(:index, 1)
   end
   after :each do

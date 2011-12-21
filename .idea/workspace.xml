@@ -2,98 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5e426a1-a574-40a0-ad0b-f4c7868566d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watir_ext.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images/2.GIF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images/3.GIF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images/button.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images/circle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images/map.GIF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images/map2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images/minus.GIF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images/originaltriangle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images/square.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images/triangle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/watir_ext/element.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/watir_ext/ie_wait.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/watir_ext/page_container.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/watir_ext/text_field.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/spec_ext.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/string_ext.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/JavascriptClick.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/blankpage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/buttons1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/checkboxes1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/complex_table.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/cssTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/depot_store.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/div.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/div_xml.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/fileupload.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/formTest1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/forms2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/forms3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/forms4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/frame_buttons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/frame_links.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/frame_multi.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/google_india.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/iframeTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/iframeTest1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/iframeTest2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/images1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/javascriptevents.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/link_pass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/links1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/links2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/links_multi.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/list_matters.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/map_test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/modal_dialog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/modal_dialog_launcher.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/nestedFrames.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/new_browser.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/pass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/popups1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/pre.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/radioButtons1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/select_tealeaf.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/selectboxes1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/simple_table.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/simple_table_buttons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/simple_table_columns.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/table1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/tableCell_using_xpath.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/textarea.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/textfields1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/textsearch.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/wallofcheckboxes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/html/xpath_nbsp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/watir_ext/click_no_wait_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/watir_ext/element_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/watir_ext/ie_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/watir_ext/text_field_spec.rb" />
-      <change type="DELETED" beforePath="D:\myproject\watir_ext\lib\watir_ext\log.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\myproject\watir_ext\spec\watir_ext\click_popup.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/watir_ext.rb" afterPath="$PROJECT_DIR$/lib/watir_ext.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/watir_ext/file_field.rb" afterPath="$PROJECT_DIR$/lib/watir_ext/file_field.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/watir_ext/frame.rb" afterPath="$PROJECT_DIR$/lib/watir_ext/frame.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/watir_ext/ie.rb" afterPath="$PROJECT_DIR$/lib/watir_ext/ie.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/server.rb" afterPath="$PROJECT_DIR$/spec/support/server.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/watir_ext/click_no_wait_spec.rb" afterPath="$PROJECT_DIR$/spec/watir_ext/click_no_wait_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/watir_ext/element_spec.rb" afterPath="$PROJECT_DIR$/spec/watir_ext/element_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/watir_ext/file_field_spec.rb" afterPath="$PROJECT_DIR$/spec/watir_ext/file_field_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/watir_ext/frame_spec.rb" afterPath="$PROJECT_DIR$/spec/watir_ext/frame_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/watir_ext.gemspec" afterPath="$PROJECT_DIR$/watir_ext.gemspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/watir_ext/ie_spec.rb" afterPath="$PROJECT_DIR$/spec/watir_ext/ie_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/watir_ext/text_field_spec.rb" afterPath="$PROJECT_DIR$/spec/watir_ext/text_field_spec.rb" />
     </list>
     <ignored path="watir_ext.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,62 +34,7 @@
     <favorites_list name="watir_ext" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ie_spec.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/watir_ext/ie_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="32" selection-start="2915" selection-end="2915" vertical-scroll-proportion="0.20342205">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="element.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/watir_ext/element.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="42" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="watir_ext.gemspec" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/watir_ext.gemspec">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="58" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ie.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/watir_ext/ie.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="11" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="81" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="element_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/watir_ext/element_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -185,22 +48,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/watir_ext/element_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/watir_ext.rb" />
         <option value="$PROJECT_DIR$/lib/watir_ext/text_field.rb" />
         <option value="$PROJECT_DIR$/spec/string_ext.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/lib/watir_ext/file_field.rb" />
         <option value="$PROJECT_DIR$/lib/watir_ext/page_container.rb" />
         <option value="$PROJECT_DIR$/spec/watir_ext/text_field_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/watir_ext/click_no_wait_spec.rb" />
         <option value="$PROJECT_DIR$/spec/watir_ext/file_field_spec.rb" />
         <option value="$PROJECT_DIR$/spec/watir_ext/frame_spec.rb" />
         <option value="$PROJECT_DIR$/watir_ext.gemspec" />
+        <option value="$PROJECT_DIR$/lib/watir_ext/element.rb" />
+        <option value="$PROJECT_DIR$/spec/watir_ext/click_no_wait_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/watir_ext/element_spec.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/support/server.rb" />
         <option value="$PROJECT_DIR$/lib/watir_ext/ie.rb" />
         <option value="$PROJECT_DIR$/spec/watir_ext/ie_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/watir_ext/element.rb" />
       </list>
     </option>
   </component>
@@ -294,24 +157,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="watir_ext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="watir_ext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="watir_ext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="support" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -446,19 +291,19 @@
     <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.309" sideWeight="0.6710311" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.309" sideWeight="0.6710311" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -479,7 +324,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加功能函数及测试代码" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -493,32 +338,12 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="项目初始化" />
+    <MESSAGE value="添加功能函数及测试代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/string_ext.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="28" selection-end="28" vertical-scroll-proportion="0.04609929">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/watir_ext/file_field.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="23" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.24500908">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/watir_ext/page_container.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="129" selection-end="129" vertical-scroll-proportion="0.1615245">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.22298457">
@@ -533,30 +358,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/server.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="19" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/watir_ext/click_no_wait_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/watir_ext/text_field_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="31" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/watir_ext/file_field_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -575,37 +379,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/watir_ext/click_no_wait_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="24" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/watir_ext/element_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="15" column="25" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/server.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="46" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="81" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+        <state line="0" column="32" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/watir_ext/file_field_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="35" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/watir_ext/file_field.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="25" selection-start="1421" selection-end="1421" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/watir_ext/ie_wait.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/watir_ext/ie.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="11" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/watir_ext/element.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="42" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+        <state line="110" column="28" selection-start="2865" selection-end="2865" vertical-scroll-proportion="3.3298244">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/watir_ext/ie_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="32" selection-start="2915" selection-end="2915" vertical-scroll-proportion="0.20342205">
+        <state line="34" column="12" selection-start="869" selection-end="869" vertical-scroll-proportion="0.7853211">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/watir_ext/page_container.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="129" selection-end="129" vertical-scroll-proportion="0.13333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/watir_ext/element.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="77" selection-end="77" vertical-scroll-proportion="0.17894737">
           <folding />
         </state>
       </provider>
