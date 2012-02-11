@@ -1,6 +1,6 @@
 #coding:utf-8
 require File.join(__FILE__, '..', '..', 'spec_helper')
-require 'watir_ext/element'
+require 'watir_ext/element_exist'
 describe Watir::Element do
   before "each" do
     @ie     = Watir::IE.new
