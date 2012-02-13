@@ -11,6 +11,7 @@ require "watir_ext/file_field"
 require "watir_ext/page_container"
 require "watir_ext/element"
 require "watir_ext/windows_input"
+require "watir_ext/object"
 module WatirExt
   # Your code goes here...
 end

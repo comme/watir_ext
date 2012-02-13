@@ -24,8 +24,5 @@ module Watir
       end
     end
 
-    def click
-      left_click
-    end
   end
 end

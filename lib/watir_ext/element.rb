@@ -1,3 +1,4 @@
+require 'watir/element'
 module Watir
   class Element
     def top_center
@@ -21,17 +22,17 @@ module Watir
     end
 
     def right_click
-      x = top_center_absolute
-      y = left_center_absolute
+      x = left_center_absolute
+      y = top_center_absolute
       # puts "x: #{x}, y: #{y}"
       WindowsInput.move_mouse(x, y)
       WindowsInput.right_click
     end
 
     def left_click
-      x = left_edge_absolute
-      y = top_edge_absolute
-      # puts "x: #{x}, y: #{y}"
+      x = left_center_absolute
+      y = top_center_absolute
+      puts "x: #{x}, y: #{y}"
       # need some extra push to get the cursor in the right area
       WindowsInput.move_mouse(x + 2, y + 2)
       WindowsInput.left_click
