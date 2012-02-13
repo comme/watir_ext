@@ -44,6 +44,24 @@ describe Watir::Object do
     end
   end
 
+  it "should not show a file choice dialog if the position hidden 2" do
+    ATT::FilePopup.record
+    @ie.minimize
+    o = @ie.frame(:name, /compose/).object(:id, "flashplayer")
+    lambda { o.left_click(true) }.should raise_error(ATT::WindowNotFoundError)
+  end
+
+  it "should show a file choice dialog" do
+    @ie.bring_to_front
+    o = @ie.frame(:name, /compose/).object(:id, "flashplayer")
+    ATT::FilePopup.record
+    o.left_click(true)
+    ATT::FilePopup.find.set(__FILE__)
+    ie   = Watir::IE.attach(:url, /10086/)
+    text = ie.frame(:name, /compose/).ul(:id, "attachContainer").text
+    text.should be_include(File.basename(__FILE__))
+  end
+
   after :each do
     @ie.close
   end
