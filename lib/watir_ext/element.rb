@@ -4,7 +4,7 @@ module Watir
     def top_center
       assert_exists
       assert_enabled
-      if (ole_object.height.to_s =~ /$\s*\d+\s*$/ rescue false)
+      if (ole_object.height.to_s =~ /^\s*\d+\s*$/ rescue false)
         h = ole_object.height.to_i/2
       else
         h = 0
@@ -19,7 +19,7 @@ module Watir
     def left_center
       assert_exists
       assert_enabled
-      if (ole_object.width.to_s =~ /$\s*\d+\s*$/ rescue false)
+      if (ole_object.width.to_s =~ /^\s*\d+\s*$/ rescue false)
         w = ole_object.width.to_i/2
       else
         w = 0
