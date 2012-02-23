@@ -44,18 +44,30 @@ module Watir
     end
 
     def left_click
-      relocate_parent_window
-      view
-      x = left_center_absolute
-      y = top_center_absolute
+      x = left_center_absolute - scrollleft
+      y = top_center_absolute - scrollheight
+      puts "top_center_absolute:#{top_center_absolute}"
       puts "x: #{x}, y: #{y}"
       WindowsInput.move_mouse(x + 2, y + 2)
       WindowsInput.left_click
     end
+    def scrollleft
+      window = page_container.document.parentWindow.parent || page_container.document.parentWindow
+      true_width = window.document.body.scrollwidth
+      view_width = window.document.body.offsetwidth
+      true_width - view_width
+    end
+
+    def scrollheight
+      window = page_container.document.parentWindow.parent || page_container.document.parentWindow
+      window.document.documentElement.scrollTop
+    end
 
     def relocate_parent_window
-      yoffset = -page_container.document.parentWindow.screenTop.to_i
-      page_container.document.parentWindow.moveto(0,yoffset)
+      window = page_container.document.parentWindow
+      yoffset = -window.screenTop.to_i
+      offset = (window.screen.availHeight.to_i/2 rescue 0)
+      page_container.document.parentWindow.moveto(0,yoffset+offset)
     end
 
     def view

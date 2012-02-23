@@ -11,7 +11,7 @@ module Watir
       set_container container
       @how  = how
       @what = what
-      @retry_times = 10
+#      @retry_times = 3
       super(nil)
     end
 
@@ -34,7 +34,7 @@ module Watir
 =end
     def left_click(popup=false)
       if popup
-        times = @retry_times
+        times = 3
         begin
           ATT::Popup.record
           super()
