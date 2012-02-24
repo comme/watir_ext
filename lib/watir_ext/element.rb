@@ -4,53 +4,53 @@ module Watir
     def top_center
       assert_exists
       assert_enabled
-      if (ole_object.height.to_s =~ /^\s*\d+\s*$/ rescue false)
-        h = ole_object.height.to_i/2
-      else
-        h = 0
-      end
-      ole_object.getBoundingClientRect.top.to_i + h
+      t = ole_object.getBoundingClientRect.top.to_i
+      b = ole_object.getBoundingClientRect.bottom.to_i
+      t + ( b - t )/2
     end
 
     def top_center_absolute
-      puts "left_center:#{top_center}"
-      puts "page_container.document.parentWindow.screenLeft:#{page_container.document.parentWindow.screenTop.to_i}"
       top_center + page_container.document.parentWindow.screenTop.to_i
     end
 
     def left_center
       assert_exists
       assert_enabled
-      if (ole_object.width.to_s =~ /^\s*\d+\s*$/ rescue false)
-        w = ole_object.width.to_i/2
-      else
-        w = 0
-      end
-      ole_object.getBoundingClientRect.left.to_i + w
+      l = ole_object.getBoundingClientRect.left.to_i
+      r = ole_object.getBoundingClientRect.right.to_i
+      l + ( r - l )/2
     end
 
     def left_center_absolute
-      puts "left_center:#{left_center}"
-      puts "page_container.document.parentWindow.screenLeft:#{page_container.document.parentWindow.screenLeft.to_i}"
       left_center + page_container.document.parentWindow.screenLeft.to_i
     end
 
-    def right_click
-      x = left_center_absolute
-      y = top_center_absolute
-      # puts "x: #{x}, y: #{y}"
-      WindowsInput.move_mouse(x, y)
-      WindowsInput.right_click
-    end
-
-    def left_click
+    def right_click(ox=0,oy=0)
+	  view
       x = left_center_absolute - scrollleft
       y = top_center_absolute - scrollheight
-      puts "top_center_absolute:#{top_center_absolute}"
       puts "x: #{x}, y: #{y}"
-      WindowsInput.move_mouse(x + 2, y + 2)
-      WindowsInput.left_click
+	  if view?(x,y)
+        WindowsInput.move_mouse(x + ox.to_i, y + oy.to_i)
+        WindowsInput.right_click
+	  else
+	    puts "判断元素不可见,其坐标为x:#{x},y:#{y},不再点击"
+	  end
     end
+
+    def left_click(ox=0,oy=0)
+	  view
+      x = left_center_absolute - scrollleft
+      y = top_center_absolute - scrollheight
+      puts "x: #{x}, y: #{y}"
+	  if view?(x,y)
+        WindowsInput.move_mouse(x + 2 + ox.to_i, y + 2 + oy.to_i)
+        WindowsInput.left_click
+	  else
+	    puts "判断元素不可见,其坐标为x:#{x},y:#{y},不再点击"
+	  end
+    end
+	
     def scrollleft
       window = page_container.document.parentWindow.parent || page_container.document.parentWindow
       true_width = window.document.body.scrollwidth
@@ -75,5 +75,16 @@ module Watir
       assert_enabled
       ole_object.scrollintoview(false)
     end
+	
+	def view?(x,y)
+	  width = page_container.document.parentWindow.screen.availWidth
+	  height = page_container.document.parentWindow.screen.availHeight
+	  if x < 0 || x > width || y < 0 || y > height
+        false
+      else
+        true
+	  end
+	end
+	
   end
 end
