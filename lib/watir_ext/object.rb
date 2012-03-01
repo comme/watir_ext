@@ -6,12 +6,10 @@ module Watir
   end
   class Object < Element
 
-    attr_accessor :retry_times
     def initialize(container, how, what)
       set_container container
       @how  = how
       @what = what
-#      @retry_times = 3
       super(nil)
     end
 
@@ -28,28 +26,28 @@ module Watir
     end
 
 =begin rdoc
-描述: 使用鼠标左键点击元素，如果传入popup=true,则会尝试重试制定次数直到有新的窗口产生
-      当popup为true时: ATT::WindowNotFoundError--没有发现窗口
-                       ATT::MutliWindowsMatchError--发现的窗口数大于一个
+描述: 使用鼠标左键点击元素，会尝试重试一次数直到有新的窗口产生
+      有窗口产生时，返回一个ATT::Popup对象
+      没有或者有多个窗口对象产生时，返回nil
 =end
-    def left_click(popup=false)
-      if popup
-        times = 3
-        begin
-          ATT::Popup.record
-          super()
-          ATT::Popup.find
-        rescue ATT::WindowNotFoundError
-          if times > 0
-            times -= 1
-            sleep 1
-            retry
-          end
-          raise
+    def left_click(xoffset=0, yoffset=0)
+      times = 2
+      begin
+        ATT::Popup.record
+        super
+        ATT::Popup.find
+      rescue
+        if times > 0
+          times -= 1
+          sleep 1
+          retry
         end
-      else
-        super()
+        nil
       end
+    end
+
+    def left_click!(xoffset=0, yoffset=0)
+      super
     end
   end
 end

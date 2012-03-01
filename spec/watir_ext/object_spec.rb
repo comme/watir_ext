@@ -9,14 +9,14 @@ describe Watir::Object do
       @ie.button(:value, "登 录").click
       @ie.link(:id, "overridelink").click if @ie.link(:id, "overridelink").exist?
       @ie.link(:title, "写信").click
-      @ie = Watir::IE.attach(:url, /10086/)
+#      @ie = Watir::IE.attach(:url, /10086/)
     end
 
     it "should show a file choice dialog" do
       ATT::FilePopup.record
       @ie.bring_to_front
       o = @ie.frame(:name, /compose/).object(:id, "flashplayer")
-      o.left_click
+      o.left_click!
       file_upload_window = ATT::FilePopup.find
       file_upload_window.set(__FILE__)
       ie   = Watir::IE.attach(:url, /10086/)
@@ -49,14 +49,14 @@ describe Watir::Object do
       ATT::FilePopup.record
       @ie.minimize
       o = @ie.frame(:name, /compose/).object(:id, "flashplayer")
-      lambda { o.left_click(true) }.should raise_error(ATT::WindowNotFoundError)
+      o.left_click.should be_nil
     end
-
+#
     it "should show a file choice dialog" do
       @ie.bring_to_front
       o = @ie.frame(:name, /compose/).object(:id, "flashplayer")
       ATT::FilePopup.record
-      o.left_click(true)
+      o.left_click!
       ATT::FilePopup.find.set(__FILE__)
       ie   = Watir::IE.attach(:url, /10086/)
       text = ie.frame(:name, /compose/).ul(:id, "attachContainer").text
@@ -94,6 +94,19 @@ describe Watir::Object do
 
     after :each do
       @ie.close
+    end
+  end
+  context "189 mail" do
+    it "1" do
+      ie = Watir::IE.start("http://webmail1.189.cn//webmail/UDBLogin")
+      ie.text_field(:index, 1).set("test_lovemm")
+      ie.text_field(:index, 2).set("fuckyouall!")
+      ie.button(:index, 1).click
+      ie.frame(:id, "navFrame").span(:title, "写邮件").click
+      ATT::FilePopup.record
+      ie.frame(:id, "sendFR1").object(:name, "attachment").left_click
+      lambda { ATT::FilePopup.find.set(__FILE__) }.should_not raise_error
+      ie.close
     end
   end
 end

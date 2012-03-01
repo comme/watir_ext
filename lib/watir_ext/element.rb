@@ -7,7 +7,7 @@ module Watir
       assert_enabled
       t = ole_object.getBoundingClientRect.top.to_i
       b = ole_object.getBoundingClientRect.bottom.to_i
-      t + (b - t)/2
+      t + (b - t)/4
     end
 
     def top_center_absolute
@@ -19,7 +19,7 @@ module Watir
       assert_enabled
       l = ole_object.getBoundingClientRect.left.to_i
       r = ole_object.getBoundingClientRect.right.to_i
-      l + (r - l)/2
+      l + (r - l)/4
     end
 
     def left_center_absolute
@@ -39,6 +39,8 @@ module Watir
       end
     end
 
+    alias right_click! right_click
+
     def left_click(ox=0, oy=0)
       view
       x = left_center_absolute - scrollleft
@@ -51,6 +53,8 @@ module Watir
         puts "判断元素不可见,其坐标为x:#{x},y:#{y},不再点击"
       end
     end
+
+    alias left_click! left_click
 
     def has_parent?
       me     = page_container.document.parentWindow
@@ -65,8 +69,8 @@ module Watir
     def scrollleft
       if has_parent?
         window     = page_container.document.parentWindow.parent || page_container.document.parentWindow
-        true_width = window.document.body.scrollwidth
-        view_width = window.document.body.offsetwidth
+        true_width = window.document.body.scrollwidth.zero? ? window.document.body.scrollwidth : window.document.documentElement.scrollwidth
+        view_width = window.document.body.offsetwidth.zero? ? window.document.body.offsetwidth : window.document.documentElement.offsetwidth
         true_width - view_width
       else
         0
