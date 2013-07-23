@@ -11,8 +11,8 @@ module Watir
       ruby_code << "pc = #{attach_command}; " # pc = page container
       # IDEA: consider changing this to not use instance_eval (it makes the code hard to understand)
       ruby_code << "pc.instance_eval(#{command.inspect})"
-      #exec_string = "start rubyw -e #{(load_path_code + '; ' + ruby_code).inspect}"
-      exec_string = "start rubyw -e #{(load_path_code + '; ' + ruby_code).gsub('"', '\'').inspect}"
+      exec_string = "start rubyw -e #{(load_path_code + '; ' + ruby_code).inspect}"
+      # exec_string = "start rubyw -e #{(load_path_code + '; ' + ruby_code).gsub('"', '\'').inspect}"
       system(exec_string)
     end
   end

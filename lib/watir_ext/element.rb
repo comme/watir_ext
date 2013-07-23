@@ -1,6 +1,17 @@
 #coding: utf-8
 require 'watir/element'
 module Watir
+  class InputElement < Element
+    def how
+       @how
+    end
+     
+    def what
+      @what
+    end
+  end
+end
+module Watir
   class Element
     def top_center
       assert_exists
@@ -108,6 +119,19 @@ module Watir
         true
       end
     end
-
+   
+    def click_no_wait(use_location_how_what=false)
+      assert_enabled
+      
+      highlight(:set)
+      if use_location_how_what
+        object = "#{self.class}.new(self, :#{self.how}, '#{self.what}')"
+      else
+        object = "#{self.class}.new(self, :unique_number, #{self.unique_number})"
+      end
+      @page_container.eval_in_spawned_process(object + ".click!")
+      highlight(:clear)
+    end
+    
   end
 end
